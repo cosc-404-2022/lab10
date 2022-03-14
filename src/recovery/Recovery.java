@@ -51,13 +51,13 @@ public class Recovery {
 		HashSet<String> redoList = new HashSet<String>();
 
 		// Pass #1: Determine undo and redo lists.
-    	//			Start scan at end of log and go towards front of log until hit start of log or checkpoint start with matching checkpoint end.
-    	// TODO: Implement loop to scan through log records for Pass #1
-    	// TODO: For a checkpoint start, all active transactions are in transaction field of log record in a comma-separated form    	
-    	// TODO: For a checkpoint end, the value saved to database for each item is given.  These key-value pairs are comma-separated in transaction field in record.
+		//			Start scan at end of log and go towards front of log until hit start of log or checkpoint start with matching checkpoint end.
+		// TODO: Implement loop to scan through log records for Pass #1
+		// TODO: For a checkpoint start, all active transactions are in transaction field of log record in a comma-separated form    	
+		// TODO: For a checkpoint end, the value saved to database for each item is given.  These key-value pairs are comma-separated in transaction field in record.
     	
-    	// for ( )
-    	{
+		// for ( )
+		{
 			//		case CHECKPOINT_START:
 						// TODO: Add all transactions not currently in REDO LIST to UNDO LIST
 							
