@@ -8,6 +8,8 @@ In this lab, you will implement undo-redo recovery using a write-ahead log.  The
 
 The code file to modify is `Recovery.java`.  Test using the JUnit test file `TestRecovery.java`.
 
+**Note: The checkpoint end record contains the item values at the end of the checkpoint. During pass #1, make sure to set the item values to those in the checkpoint end so that the database will be recovered to the proper state.**
+
 ## Submission
 
 The lab can be marked immediately by the professor or TA by showing the output of the JUnit tests and by a quick code review.  Otherwise, submit the URL of your GitHub repository on Canvas. **Make sure to commit and push your updates to GitHub.**
